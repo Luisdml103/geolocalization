@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GEOLOCALIZATION</title>
+  <link rel="import" href="elements/elements.html">
+  
+</head>
+<body unresolved class="fullbleed layout vertical">
+<span id="browser-sync-binding"></span>
+    <style>
+    :host {
+       display: block;
+      }
+
+   
+    .toolbar {
+      height: 144px;
+      padding: 16px;
+      background: lightblue;
+      color: black;
+      
+      @apply(--paper-font-body2);
+    }
+
+    </style>
+
+   <template is="dom-bind">
+       
+	 <div class="toolbar">
+            
+
+           <h1> Geolocalization</h1>
+
+            
+         </div>
+	
+
+
+        
+	<paper-input label="street #1" type="text" value="{{street1::change}}"></paper-input>
+        <paper-input label="street #2" type="text" value="{{street2::change}}"></paper-input>
+
+	<my-ajaxelement street1="{{street1}}" street2="{{street2}}"></my-ajaxelement>
+	
+	
+
+
+   </template>
+
+</body>
+</html>
